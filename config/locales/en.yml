@@ -1,0 +1,37 @@
+---
+en:
+  HDD: Hdd
+  OS: Os
+  activerecord:
+    models:
+      computer:
+        one: Computadora
+        others: Computadoras
+      screen:
+        one: Pantalla
+        others: Pantallas
+  are_you_sure?: Are you sure?
+  back: Back
+  campus: Campus
+  code: Code
+  codigo: Codigo
+  destroy: Destroy
+  edit: Edit
+  edit_screen: Edit screen
+  editing_computer: Editing computer
+  errors:
+    messages:
+      not_saved: Not saved
+  forgot_your_password?: Forgot your password?
+  hello: Hello world
+  log_in: Log in
+  mark: Mark
+  memory: Memory
+  model: Model
+  new_computer: New computer
+  new_screen: New screen
+  processor: Processor
+  show: Show
+  sign_up: Sign up
+  sing_up: Sing up
+  size: Size

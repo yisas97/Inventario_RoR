@@ -1,0 +1,37 @@
+---
+es:
+  HDD: Disco Duro
+  OS: Sistema Operativo
+  activerecord:
+    models:
+      computer:
+        one: Computadora
+        others: Computadoras
+      screen:
+        one: Pantalla
+        others: Pantallas
+  are_you_sure?: "¿Estas Seguro?"
+  back: Atras
+  campus: Sede
+  code: Codigo
+  codigo: Codigo
+  destroy: Borrar
+  edit: Editar
+  edit_screen: Editar Activo
+  editing_computer: Editar Activo
+  errors:
+    messages:
+      not_saved: No Guardar
+  forgot_your_password?: "¿Olvidaste tu Contraseña?"
+  hello: Hello world
+  log_in: Iniciar Sesion
+  mark: Marca
+  memory: Memoria Ram
+  model: Modelo
+  new_computer: Registrar Computadora
+  new_screen: Registrar Nueva Pantalla
+  processor: Procesador
+  show: Mostrar
+  sign_up: Registrarse
+  sing_up: Registrarse
+  size: Tamaño

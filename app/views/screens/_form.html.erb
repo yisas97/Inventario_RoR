@@ -1,0 +1,24 @@
+
+<%= simple_form_for(@screen) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <br>
+  <div class="form-actions">
+    <%= f.button :submit , class: "btn btn-primary"%>
+  </div>
+  <br>
+  <div class="form-inputs">
+    <div class="row">
+      <div class="col-6">
+          <%= f.input :code , label: t('code')%>
+      </div>
+      <div class="col">
+          <%= f.input :campus , label: t('campus')%>
+      </div>
+    </div>
+    <%= f.input :size, label: t('size')%>
+    <%= f.input :model , label: t('model')%>
+    <%= f.input :mark , label: t('mark')%>
+  </div>
+
+<% end %>

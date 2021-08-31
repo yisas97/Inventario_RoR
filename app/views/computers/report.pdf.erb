@@ -1,0 +1,29 @@
+
+<div class="container mt-4 pb-4">
+    <h1>Computadoras</h1>
+    <table class="table table-striped table-borderedr">
+        <thead class="table-dark">
+            <tr>
+                <th class = "reporte-th" scope="col">Code</th>
+                <th class = "reporte-th" scope="col">Campus</th>
+                <th class = "reporte-th" scope="col">Os</th>
+                <th class = "reporte-th" scope="col">Processor</th>
+                <th class = "reporte-th" scope="col">Memory</th>
+                <th class = "reporte-th" scope="col">Hdd</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @computers.each do |computer| %>
+                <tr>
+                    <td><%= computer.code %></td>
+                    <td><%= computer.campus %></td>
+                    <td><%= computer.OS %></td>
+                    <td><%= computer.processor %></td>
+                    <td><%= computer.memory %></td>
+                    <td><%= computer.HDD %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>

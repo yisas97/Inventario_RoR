@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Organizador </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'%>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'%>
+        <%= stylesheet_link_tag "admin"%>
+
+
+
+    </head>
+    <body class="bg-gradient-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-12 col-md-9">
+                    <div class="card o-hidden border-0 shadoww-lg my-5">
+                        <div class="card-body p-0">
+                            <div class="row">  
+                                <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="p-5">
+                                        <div class="text-center">
+                                            <h1>Bienvenido</h1>
+                                        </div>
+                                        <%= yield %>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

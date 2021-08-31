@@ -1,0 +1,68 @@
+<div class="container-sm">
+  <h1 class="page-header text-center">Computadoras</h1>
+  <hr>
+  <div class="container-fluid nav">
+    <ul class="me-auto mb-2 mb-lg-0">
+      <% if current_user.role =='admin'%>
+                <div>
+                  <span class="inline-flex rounded-md shadow-sm">
+                    <%= link_to t('new_computer'), new_computer_path, class:"btn btn-outline-primary" %>      
+                  </span>
+                </div>
+      <%end%>
+    </ul>
+    <%= link_to 'Reporte', computers_path(@computer, :format => :pdf) , class: "btn btn-outline-primary btn-xs"%>
+    <%= form_tag( '/search/results_computer', options = { class: "d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" }) do %>
+              <div class="input-group">
+                <%= text_field_tag("termino", value = nil, options = { class: "form-control bg-light border-0 small", placeholder: "Search for..."}) %>
+                <div class="input-group-append">
+                  <%= submit_tag(value = "Buscar", options = { class: "btn btn-primary" }) do %>
+                    <i class="fas fa-search fa-sm"></i>
+                  <% end %>
+                </div>
+              </div>
+    <% end %>
+  </div>
+  <hr>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th class="text-center"><%= t('code')%></th>
+        <th class="text-center"><%= t('campus')%></th>
+        <th class="text-center"><%= t('OS')%></th>
+        <th class="text-center"><%= t('processor')%></th>
+        <th class="text-center"><%= t('memory')%></th>
+        <th class="text-center"><%= t('HDD')%></th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @computers.each do |computer| %>
+        <tr>
+          <td class="p-3 text-center"><%= computer.code %></td>
+          <td class="p-3 text-center"><%= computer.campus %></td>
+          <td class="p-3 text-center"><%= computer.OS %></td>
+          <td class="p-3 text-center"><%= computer.processor %></td>
+          <td class="p-3 text-center"><%= computer.memory %></td>
+          <td class="p-3 text-center"><%= computer.HDD %></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+              <% if can? :edit, computer %>
+                <%= link_to t('edit'), edit_computer_path(computer), class: "btn btn-outline-primary", type: "button" %>
+              <%end %>
+              <% if can? :destroy, computer %>
+                <%= link_to t('destroy'), computer, method: :delete, data: { confirm: t('are_you_sure?') } , class: "btn btn-outline-primary", type: "button" %>
+              <%end %>
+              
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+</div>
+

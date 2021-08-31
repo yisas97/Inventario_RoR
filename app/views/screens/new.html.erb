@@ -1,0 +1,8 @@
+<div class="container-sm w-50 p-3">
+    <h1><%= t('new_screen')%></h1>
+
+    <%= render 'form', screen: @screen %>
+    <br>
+    <%= link_to t('back'), screens_path , class: "btn btn-outline-primary"%>
+</div>
+

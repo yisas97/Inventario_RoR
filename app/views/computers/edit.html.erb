@@ -1,0 +1,11 @@
+<div class="container-sm w-50 p-2">
+    <h1 class="title text-center"><%= t("editing_computer")%></h1>
+
+    <%= render 'form', computer: @computer %>
+    <br>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <%= link_to t('show'), @computer, type: "button" , class: "btn btn-outline-primary" %>
+        <%= link_to t('back'), computers_path, type: "button" , class: "btn btn-outline-primary" %>
+    </div>
+</div>
+

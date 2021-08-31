@@ -1,0 +1,15 @@
+.bg-login-image {
+    background-image: url("https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-color: rgb(66, 16, 158);
+    color: #858796;
+    text-align: left;
+}
+
+.centro{
+    margin: auto;
+}

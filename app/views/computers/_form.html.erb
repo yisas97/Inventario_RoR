@@ -1,0 +1,40 @@
+
+<%= simple_form_for(@computer , id: 'computer_form', data: {controller: 'computer-form'}) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-actions">
+    <%= f.button :submit , class: "btn btn-primary"%>
+  </div>
+  <br>
+  <div class="form-inputs">
+    <div class="row">
+      <div class="col">
+        <%= f.input :code , label: t('codigo') , class: "form-control" , placeholder: "8 digitos"%>
+      </div>
+      <div class="col">
+        <%= f.input :campus, label: t('campus') %>  
+      </div>
+    </div>
+    <hr>
+    <h4>Componentes</h4>
+    <div class="row">
+      <div class="col-6">
+          <%= f.input :OS, label: t('OS') %>
+      </div>
+      <div class="col">
+          <%= f.input :processor, label: t('processor') %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <%= f.input :memory, label: t('memory') %>
+      </div>
+      <div class="col">
+          <%= f.input :HDD, label: t('HDD') %>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+<% end %>

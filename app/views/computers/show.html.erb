@@ -1,0 +1,43 @@
+
+<div class="container-sm w-75 p-4">
+    <div class="card" style="width: 20rem;">
+      
+      <div class="card-body">
+        <h5 class="card-title">Activo Creado</h5>
+        <p id="notice"><%= notice %></p>
+
+        <p>
+          <strong>Code:</strong>
+          <%= @computer.code %>
+        </p>
+
+        <p>
+          <strong>Campus:</strong>
+          <%= @computer.campus %>
+        </p>
+
+        <p>
+          <strong>Os:</strong>
+          <%= @computer.OS %>
+        </p>
+
+        <p>
+          <strong>Processor:</strong>
+          <%= @computer.processor %>
+        </p>
+
+        <p>
+          <strong>Memory:</strong>
+          <%= @computer.memory %>
+        </p>
+
+        <p>
+          <strong>Hdd:</strong>
+          <%= @computer.HDD %>
+        </p>
+        
+        <%= link_to t('edit'), edit_computer_path(@computer)  ,class: "btn btn-outline-primary"%>
+        <%= link_to t('back'), computers_path ,class: "btn btn-outline-primary"%>
+      </div>
+    </div>
+</div>

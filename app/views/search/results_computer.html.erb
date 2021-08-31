@@ -1,0 +1,32 @@
+<div class="container-sm w-50 p-3">
+    <table class="table">
+            <thead class="table-dark">
+            <tr>
+                <th class="text-center"><%= t('code')%></th>
+                <th class="text-center"><%= t('campus')%></th>
+                <th class="text-center"><%= t('OS')%></th>
+                <th class="text-center"><%= t('processor')%></th>
+                <th class="text-center"><%= t('memory')%></th>
+                <th class="text-center"><%= t('HDD')%></th>
+                <th colspan="1"></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <% @computers.each do |computer| %>
+                <tr>
+                <td class="p-3 text-center"><%= computer.code %></td>
+                <td class="p-3 text-center"><%= computer.campus %></td>
+                <td class="p-3 text-center"><%= computer.OS %></td>
+                <td class="p-3 text-center"><%= computer.processor %></td>
+                <td class="p-3 text-center"><%= computer.memory %></td>
+                <td class="p-3 text-center"><%= computer.HDD %></td>
+                <td class="text-center">
+                    <%= link_to t('show'), computer, class: "btn btn-outline-primary"%> 
+                </td>
+                </tr>
+            <% end %>
+            </tbody>
+    </table>
+    <%= link_to t('back'), computers_path , class: "btn btn-outline-primary"%>
+</div>

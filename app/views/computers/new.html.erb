@@ -1,0 +1,8 @@
+<div class="container-sm">
+    <h1><%= t('new_computer')%></h1>
+
+    <%= render 'form', computer: @computer %>
+
+    <%= link_to t('back'), computers_path , class: "btn btn-outline-primary" %>
+
+</div>
