@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Computer.destroy_all
+User.create!([{id: 1, email: "jesus@gmail.com", password: "52254425", name: "Jesus", role: "admin"},
+    {id:2 , email: "italo@gmail.com", password: "52254425", name: "Italo", role: "client"}
+    
+    
+    ])
 
 Computer.create!([{code:10000000, campus: 'Central', OS:'Linux Mint', processor: 'Intel Core 7 8700', memory: '32GB', HDD:'500GB' , user_id:1},
     {code:10000001, campus: 'Central', OS:'Linux Mint', processor: 'Intel Core 7 8700', memory: '32GB', HDD:'500GB', user_id:1},
@@ -50,7 +55,7 @@ Computer.create!([{code:10000000, campus: 'Central', OS:'Linux Mint', processor:
     
     ])
 
-    Screen.create!([{code:20000000, campus: 'Central', size: 25, mark:'Teros', model: 'TB-3467' , user_id:1},
+Screen.create!([{code:20000000, campus: 'Central', size: 25, mark:'Teros', model: 'TB-3467' , user_id:1},
         {code:20000001, campus: 'Central', size: 30, mark:'Teros', model: 'TE-4465', user_id:1},
         {code:20000002, campus: 'Jeronimo',size: 30, mark:'Samsung', model: 'MA-467', user_id:1},
         {code:20000003, campus: 'San Sebastian', size: 30, mark:'LG', model: 'MB-1467', user_id:1},
@@ -91,3 +96,4 @@ Computer.create!([{code:10000000, campus: 'Central', OS:'Linux Mint', processor:
         
         
         ])
+
