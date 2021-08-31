@@ -23,3 +23,10 @@ Things you may want to cover:
 
 * ...
 # Inventario_RoR
+Page Web of proyect : https://inventary-1.herokuapp.com/
+View:
+![image](https://user-images.githubusercontent.com/43008669/131434169-619d8dae-003c-4804-b949-d373c2b892e8.png)
+->
+
+![image](https://user-images.githubusercontent.com/43008669/131434223-ee18bfac-fa6b-453e-92cf-9edc239247c6.png)
+
