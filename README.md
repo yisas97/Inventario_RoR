@@ -30,3 +30,6 @@ View:
 
 ![image](https://user-images.githubusercontent.com/43008669/131434223-ee18bfac-fa6b-453e-92cf-9edc239247c6.png)
 
+
+Cuenta admin: jesus@gmail.com => password: 52254425
+Cuenta usuario: italo@gmail.com => password: 52254425
