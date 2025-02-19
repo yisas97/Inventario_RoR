@@ -4,7 +4,7 @@
   "dependencies": {
     "@popperjs/core": "^2.9.3",
     "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
+    "@rails/activestorage": "^6.1.710",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.2",
     "bootstrap": "^5.1.0",
